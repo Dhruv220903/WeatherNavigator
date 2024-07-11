@@ -1,32 +1,37 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
+
+body {
     background-color: white;
 }
-.card{
+
+.card {
     transition: ease-out 1s;
     width: 90%;
     background-color: blue;
-    min-width:100%;
+    min-width: 100%;
     padding: 40px 20px;
     text-align: center;
+    border: 1px solid black;
+    
 }
-.search{
+
+.search {
     width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    gap:10px;
+    gap: 10px;
 }
-.search input{
+
+.search input {
     border: 0px;
     outline: 0;
-    background-color:#ebfffc;
+    background-color: #ebfffc;
     padding: 10px 25px;
     height: 60;
     border-radius: 40px;
@@ -34,34 +39,40 @@ body{
     color: black;
     min-width: 40%;
 }
-.search button{
+
+.search button {
     border: 0;
     outline: 0;
-    background:#ebfffc ;
+    background: #ebfffc;
     border-radius: 40px;
     height: 60px;
     width: 60px;
     cursor: pointer;
 }
-.search button img{
+
+.search button img {
     width: 16px;
 }
-.weather-icon{
+
+.weather-icon {
     width: 170px;
     margin-top: 30px;
 }
-.weather h1{
+
+.weather h1 {
     font-size: 80px;
     font-weight: 500;
     color: white;
 }
-.weather h2{
+
+.weather h2 {
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
-    color: white
+    color: white;
 }
-.details{
+
+.details, .additional-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,25 +81,35 @@ body{
     color: white;
     gap: 100px;
 }
-.col{
+
+.col {
     display: flex;
     align-items: center;
     text-align: left;
 }
-.col img{
+
+.col img {
     width: 40px;
     margin-right: 10px;
 }
-.humidity,.wind{
+
+.humidity, .wind, .max-temp, .min-temp, .feels-like, .time {
     font-size: 28px;
     margin-top: -6px;
 }
-.weather{
+
+.weather {
     display: none;
 }
-.error{
+
+.error {
     text-align: left;
     margin-left: 10px;
-    color:white;
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.temp {
+    color: white;
+    font-size: 20px;
 }
