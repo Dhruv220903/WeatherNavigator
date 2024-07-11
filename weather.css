@@ -7,17 +7,24 @@
 
 body {
     background-color: white;
+    
 }
 
 .card {
-    transition: ease-out 1s;
+    transition: ease-in-out 2s;
     width: 90%;
     background-color: blue;
     min-width: 100%;
     padding: 40px 20px;
     text-align: center;
     border: 1px solid black;
-    
+
+}
+.card{
+    background-image: url('./images/4k-background-fd313fxzl511betu.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .search {
